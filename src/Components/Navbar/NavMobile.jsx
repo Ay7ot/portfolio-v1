@@ -11,10 +11,10 @@ export default function NavMobile({viewNavMobile, changeTheme, isLightMode, widt
                     <img src='myPicture.jpg' className='w-full h-full rounded-full'/>
                 </div>
                 <ul className='flex mt-10 justify-between w-[400px]'>
-                    <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}>About</li>
-                    <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}>Skills</li>
-                    <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}>Projects</li>
-                    <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}>Contact</li>
+                    <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}><a href='#about'>About</a></li>
+                    <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}><a href='#skills'>Skills</a></li>
+                    <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}><a href='#projects'>Projects</a></li>
+                    <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}><a href='#contact'>Contact</a></li>
                 </ul>
                 <a className='text-red-500 hover:text-white hover:bg-red-500 text-[1rem] border-2 border-red-500 p-2 rounded-sm tracking-wide transition duration-150 ease-in' href='myResume.pdf' download>
                     CV/Resume 

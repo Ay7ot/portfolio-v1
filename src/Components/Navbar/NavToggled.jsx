@@ -12,10 +12,10 @@ export default function ({ viewNavMobile, changeTheme, isLightMode }) {
                 <i className={`${isLightMode ? 'text-slate-700' : 'text-white'} text-3xl`}  onClick={viewNavMobile}><FaTimes /></i>
             </div>
             <ul className='flex flex-col items-center mt-10'>
-                <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`}>About</li>
-                <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`}>Skills</li>
-                <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`}>Projects</li>
-                <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`}>Contact</li>
+                <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`} onClick={viewNavMobile}><a href='#about'>About</a></li>
+                <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`} onClick={viewNavMobile}><a href='#skills'>Skills</a></li>
+                <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`} onClick={viewNavMobile}><a href='#projects'>Projects</a></li>
+                <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`} onClick={viewNavMobile}><a href='#contact'>Contact</a></li>
             </ul>
             <a className='text-red-500 hover:text-white hover:bg-red-500 text-[1.3rem] border-2 border-red-500 p-3 tracking-wide transition duration-200 ease-in' href='myResume.pdf' download>
             CV/Resume 
