@@ -21,7 +21,7 @@ export default function Projects({ isLightMode, width }) {
                     filter: 'brightness(40%)'
                 }
                 return (
-                    <AnimationOnScroll animateIn='animate__fadeInUp' key={project.id}>
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true} key={project.id}>
                         <div className='rounded-lg mb-[100px] md:mb-[50px] p-5'>
                             <div style={projectStyle} className='rounded-lg h-[300px] w-[300px]'></div>
                             <div className='absolute top-[30px] w-[300px] p-3'>
@@ -51,7 +51,7 @@ export default function Projects({ isLightMode, width }) {
                     // filter: 'brightness(40%)'
                 }
                 return (
-                    <div className=''>
+                    <div className='' key={project.id}>
                        {index % 2 === 0 ? 
                         <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInRight'>
                             <div className='w-full'>
