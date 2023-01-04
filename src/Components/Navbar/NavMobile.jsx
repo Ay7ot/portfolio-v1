@@ -6,7 +6,7 @@ export default function NavMobile({viewNavMobile, changeTheme, isLightMode, widt
   return (
     <>
         { width > 1024 ?
-            <div className='px-5 pt-5 pb-2 flex items-center justify-between'>
+            <div className={`px-5 pt-5 pb-2 w-full flex items-center justify-between fixed top-0 z-[999999] ${isLightMode ? 'bg-gray-100' : 'bg-slate-900'}`}>
                <div className='h-[50px] w-[50px] rounded-full'>
                     <img src='myPicture.jpg' className='w-full h-full rounded-full'/>
                 </div>
@@ -28,7 +28,7 @@ export default function NavMobile({viewNavMobile, changeTheme, isLightMode, widt
                     <i className={`${isLightMode? 'text-yellow-400' : 'text-white'} text-[1.5rem]`}><FaSun /></i>
                 </div>
             </div> :
-            <div className='px-5 pt-5 pb-2 w-full flex justify-between items-center border-b-2 border-slate-800'>
+            <div className={`px-5 pt-5 pb-2 w-full flex justify-between items-center border-b-2 border-slate-800 fixed top-0 z-[9999999] ${isLightMode ? 'bg-gray-100' : 'bg-slate-900'}`}>
                 <div className='h-[50px] w-[50px] rounded-full'>
                     <img src='myPicture.jpg' className='w-full h-full rounded-full'/>
                 </div>

@@ -26,7 +26,7 @@ function App() {
     <div className={`min-h-screen ${isLightMode ? 'bg-gray-100' : 'bg-slate-900'} font-poppins pb-10`}>
       {isToggled ? <NavToggled viewNavMobile={viewNavMobile} changeTheme={changeTheme} isLightMode={isLightMode} /> : <NavMobile viewNavMobile={viewNavMobile} width={width} changeTheme={changeTheme} isLightMode={isLightMode}/>}
       {!isToggled && 
-        <div className=" px-7 py-5 md:px-[10%] lg:px-[20%]">
+        <div className="mt-[10%] px-7 py-5 md:px-[10%] lg:px-[20%]">
           <MainHeader isLightMode={isLightMode}/>
           <About isLightMode={isLightMode} />
           <MySkills isLightMode={isLightMode} />
