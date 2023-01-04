@@ -56,11 +56,11 @@ export default function Projects({ isLightMode, width }) {
                         <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInRight'>
                             <div className='w-full'>
                                 <div style={projectStyle} className='w-[70%] h-[300px] project-style rounded-lg'></div>
-                                <div className=' w-[50%] h-[100px] flex flex-col items-end relative left-[500px] bottom-[250px]'>
+                                <div className=' w-[50%] h-[100px] flex flex-col items-end relative lg:left-[400px] xl:left-[500px] bottom-[250px]'>
                                     <p className='text-blue-300 '>Personal Project</p>
                                     <p className={`${isLightMode ? 'text-red-500' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-3`}>{project.name}</p>
                                     <div className='bg-slate-500 p-3 rounded-sm flex flex-col items-end shadow-xl shadow-slate-700'>
-                                        <p className='text-gray-300 text-sm text-right'>{project.description}</p>
+                                        <p className='text-gray-300 text-sm text-right max-w-[400px]'>{project.description}</p>
                                         <div className='flex mt-3 w-[70px] justify-between'>
                                                 <a href={project.github} target="_blank" className='text-white text-[1.3rem] hover:bg-white rounded-full p-1 hover:text-black'>
                                                     <FaGithub />
@@ -78,8 +78,8 @@ export default function Projects({ isLightMode, width }) {
                                 <div className='w-[50%] relative top-[250px] z-[9999]'>
                                     <p className='text-blue-300 '>Personal Project</p>
                                     <p className={`${isLightMode ? 'text-red-500' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-3`}>{project.name}</p>
-                                    <div className='bg-slate-500 p-3 rounded-sm flex flex-col items-end shadow-xl shadow-slate-700'>
-                                        <p className='text-gray-300 text-sm text-left'>{project.description}</p>
+                                    <div className='bg-slate-500 p-3 rounded-sm flex flex-col  shadow-xl shadow-slate-700'>
+                                        <p className='text-gray-300 text-sm text-left max-w-[400px]'>{project.description}</p>
                                         <div className='flex mt-3 w-[70px] justify-between'>
                                                 <a href={project.github} target="_blank" className='text-white text-[1.3rem] hover:bg-white rounded-full p-1 hover:text-black'>
                                                     <FaGithub />
@@ -90,7 +90,7 @@ export default function Projects({ isLightMode, width }) {
                                         </div>
                                     </div>
                                 </div>
-                                <div style={projectStyle} className='w-[70%] h-[300px] project-style rounded-lg relative left-[300px]'></div>
+                                <div style={projectStyle} className='w-[70%] h-[300px] project-style rounded-lg relative lg:left-[250px] xl:left:[300px]'></div>
                             </div>
                         </AnimationOnScroll>
                         } 
