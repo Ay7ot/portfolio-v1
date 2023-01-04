@@ -6,7 +6,7 @@ export default function NavMobile({viewNavMobile, changeTheme, isLightMode, widt
   return (
     <>
         { width > 1024 ?
-            <div className={`px-5 pt-5 pb-2 w-full flex items-center justify-between fixed top-0 z-[999999] shadow-md shadow-slate-800 ${isLightMode ? 'bg-gray-100' : 'bg-slate-900'}`}>
+            <div className={`px-5 pb-2 w-full flex items-center justify-between fixed top-0 z-[999999] shadow-md shadow-slate-800 ${isLightMode ? 'bg-gray-100' : 'bg-slate-900'}`}>
                <div className='h-[50px] w-[50px] rounded-full'>
                     <img src='myPicture.jpg' className='w-full h-full rounded-full'/>
                 </div>
