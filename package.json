@@ -16,7 +16,8 @@
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

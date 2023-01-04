@@ -5,7 +5,7 @@ import "animate.css/animate.min.css";
 
 export default function MySkills({ isLightMode }) {
   return (
-    <section className='min-h-screen pt-[100px]' id='skills'>
+    <section className='min-h-screen pt-[150px]' id='skills'>
         <h2 className={`${isLightMode ? 'text-slate-700' : 'text-white'} text-[2rem] font-bold tracking-wide`}>
             My <span className={`${isLightMode ? 'text-red-600' : 'text-blue-200'}`}>Skills</span>
         </h2>

@@ -6,7 +6,7 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 
 export default function Projects({ isLightMode, width }) {
   return (
-    <section className='min-h-screen pt-[100px] pb-[100px]' id='projects'>
+    <section className='min-h-screen pt-[150px] pb-[100px]' id='projects'>
         <h2 className={`${isLightMode ? 'text-slate-700' : 'text-white'} text-[2rem] font-bold tracking-wide`}>
             My <span className={`${isLightMode ? 'text-red-600' : 'text-blue-200'}`}>Projects</span>
         </h2>
@@ -47,6 +47,7 @@ export default function Projects({ isLightMode, width }) {
                 const projectStyle = {
                     backgroundImage: `url(${project.img})`,
                     backgroundPositionX: 'center',
+                    backgroundPositionY: project.name === "Spandor's Tenzie" ? 'center' : 'top',
                     backgroundSize: 'cover',
                     // filter: 'brightness(40%)'
                 }

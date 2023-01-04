@@ -19,7 +19,7 @@ function App() {
   useEffect(()=>{
     setTimeout(()=>{
       setIsLoading(false)
-    }, 3000)
+    }, 4500)
   },[])
 
   function viewNavMobile(){
@@ -29,7 +29,6 @@ function App() {
   function changeTheme(){
     setIsLightMode(!isLightMode)
   }
-
 
   return !isLoading ? 
     <div className={`min-h-screen ${isLightMode ? 'bg-gray-100' : 'bg-slate-900'} font-poppins pb-10`}>
@@ -41,7 +40,7 @@ function App() {
           <MySkills isLightMode={isLightMode} />
           <Projects isLightMode={isLightMode} width={width}/>
           <Contact isLightMode={isLightMode} />
-         {width >= 1024 &&  <SideLinks />}
+          {width >= 1024 &&  <SideLinks />}
         </div>
       }
     </div> :

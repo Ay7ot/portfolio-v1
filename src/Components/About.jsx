@@ -4,7 +4,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function About({ isLightMode }) {
   return (
-    <section className='h-screen pt-[150px] md:pt-[200px]' id='about'>
+    <section className='h-screen pt-[150px] md:pt-[300px]' id='about'>
       <h2 className={`${isLightMode ? 'text-slate-700' : 'text-white'} text-[2rem] font-bold tracking-wide`}>
         <span className={`${isLightMode ? 'text-red-600' : 'text-blue-200'}`}>ABOUT </span>ME
       </h2>
