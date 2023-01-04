@@ -7,6 +7,7 @@ import MySkills from "./Components/MySkills"
 import Projects from "./Components/Projects"
 import Contact from "./Components/Contact"
 import useWindowDimensions from "./windowDimensions"
+import SideLinks from "./Components/SideLinks"
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <MySkills isLightMode={isLightMode} />
           <Projects isLightMode={isLightMode} width={width}/>
           <Contact isLightMode={isLightMode} />
+         {width >= 1024 &&  <SideLinks />}
         </div>
       }
     </div>
