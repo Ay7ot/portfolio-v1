@@ -27,6 +27,7 @@ export default function NavMobile({viewNavMobile, changeTheme, isLightMode, widt
                     </div>
                     <i className={`${isLightMode? 'text-yellow-400' : 'text-white'} text-[1.5rem]`}><FaSun /></i>
                 </div>
+                
             </div> :
             <div className={`px-5 pt-5 pb-2 w-full flex justify-between items-center fixed top-0 z-[9999999] shadow-lg shadow-slate-700 ${isLightMode ? 'bg-gray-100' : 'bg-slate-900'}`}>
                 <div className='h-[50px] w-[50px] rounded-full'>
