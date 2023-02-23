@@ -11,8 +11,8 @@ export default function Projects({ isLightMode, width }) {
             My <span className={`${isLightMode ? 'text-red-600' : 'text-blue-200'}`}>Projects</span>
         </h2>
         {
-            width < 1024 ?
-            <div className='mt-10 flex flex-col items-center md:grid md:grid-cols-2'>
+            width <= 768 ?
+            <div className='mt-10 flex flex-col items-center sm:grid sm:grid-cols-2'>
             {myProjects.map(project=>{
                 const projectStyle = {
                     backgroundImage: `url(${project.img})`,
@@ -57,7 +57,7 @@ export default function Projects({ isLightMode, width }) {
                         <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInRight'>
                             <div className='w-full'>
                                 <div style={projectStyle} className='w-[70%] h-[300px] project-style rounded-lg'></div>
-                                <div className=' w-[50%] h-[100px] flex flex-col items-end relative lg:left-[400px] xl:left-[500px] bottom-[250px]'>
+                                <div className=' w-[50%] h-[100px] flex flex-col items-end relative md:left-[300px] lg:left-[400px] xl:left-[500px] bottom-[250px]'>
                                     <p className='text-blue-300 '>Personal Project</p>
                                     <p className={`${isLightMode ? 'text-red-500' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-3`}>{project.name}</p>
                                     <div className='bg-slate-500 p-3 rounded-sm flex flex-col items-end shadow-xl shadow-slate-700'>
@@ -91,7 +91,7 @@ export default function Projects({ isLightMode, width }) {
                                         </div>
                                     </div>
                                 </div>
-                                <div style={projectStyle} className='w-[70%] h-[300px] project-style rounded-lg relative lg:left-[250px] xl:left:[300px]'></div>
+                                <div style={projectStyle} className='w-[70%] h-[300px] project-style rounded-lg relative md:left-[200px] lg:left-[250px] xl:left:[300px]'></div>
                             </div>
                         </AnimationOnScroll>
                         } 
