@@ -17,7 +17,7 @@ export default function ({ viewNavMobile, changeTheme, isLightMode }) {
                 <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`} onClick={viewNavMobile}><a href='#projects'>Projects</a></li>
                 <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-10`} onClick={viewNavMobile}><a href='#contact'>Contact</a></li>
             </ul>
-            <a className='text-red-500 hover:text-white hover:bg-red-500 text-[1.3rem] border-2 border-red-500 p-3 tracking-wide transition duration-200 ease-in' href='myResume.pdf' download>
+            <a className='text-red-500 hover:text-white hover:bg-red-500 text-[1.3rem] border-2 border-red-500 p-3 tracking-wide transition duration-200 ease-in' href={`Ayomide's Resume.pdf`} download>
             CV/Resume 
             </a>
             <div className='flex mt-10 items-center'>

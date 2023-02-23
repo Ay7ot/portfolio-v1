@@ -14,7 +14,7 @@ export default function MainHeader({ isLightMode }) {
         <p className={`${isLightMode ? 'text-slate-700' : 'text-gray-400'}  mt-10 font-Sriracha`}>
             Welcome to my corner of the internet! I'm a web developer with a passion for crafting clean and efficient code, and a love for all things tech. When I'm not busy building websites and applications, you can find me tinkering with new programming languages or daydreaming about my next big project. Thanks for stopping by!
         </p>
-        <a className='mt-10 text-red-500 flex items-center w-[170px] hover:text-white active:text-white hover:bg-red-500 active:bg-red-500 text-[1rem] border-2 border-red-500 p-2 rounded-sm tracking-wide transition duration-150 ease-in' href='myResume.pdf' download>
+        <a className='mt-10 text-red-500 flex items-center w-[170px] hover:text-white active:text-white hover:bg-red-500 active:bg-red-500 text-[1rem] border-2 border-red-500 p-2 rounded-sm tracking-wide transition duration-150 ease-in' href={`Ayomide's Resume.pdf`} download>
             View Resume <span className='ml-3'><FaArrowRight /></span>
         </a>
     </section>

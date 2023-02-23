@@ -16,7 +16,7 @@ export default function NavMobile({viewNavMobile, changeTheme, isLightMode, widt
                     <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}><a href='#projects'>Projects</a></li>
                     <li className={`${isLightMode ? 'text-slate-700' : 'text-white'} px-3 py-1 font-semi-bold tracking-wide text-[1.1rem] mb-10 hover:bg-slate-500 hover:text-white rounded-full transition duration-200 ease-in`}><a href='#contact'>Contact</a></li>
                 </ul>
-                <a className='text-red-500 hover:text-white hover:bg-red-500 text-[1rem] border-2 border-red-500 p-2 rounded-sm tracking-wide transition duration-150 ease-in' href='myResume.pdf' download>
+                <a className='text-red-500 hover:text-white hover:bg-red-500 text-[1rem] border-2 border-red-500 p-2 rounded-sm tracking-wide transition duration-150 ease-in' href={`Ayomide's Resume.pdf`} download>
                     CV/Resume 
                 </a>
                 <div className='flex items-center'>
