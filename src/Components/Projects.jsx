@@ -55,7 +55,7 @@ export default function Projects({ isLightMode, width }) {
                     <div className='' key={project.id}>
                        {index % 2 === 0 ? 
                         <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInRight'>
-                            <div className='w-full'>
+                            <div className='w-full -mb-[150px]'>
                                 <div style={projectStyle} className='w-[70%] h-[300px] project-style rounded-lg'></div>
                                 <div className=' w-[50%] h-[100px] flex flex-col items-end relative md:left-[300px] lg:left-[400px] xl:left-[500px] bottom-[250px]'>
                                     <p className='text-blue-300 '>Personal Project</p>
@@ -75,7 +75,7 @@ export default function Projects({ isLightMode, width }) {
                             </div>
                         </AnimationOnScroll>:
                         <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInLeft'>
-                            <div className='w-full mb-[250px]'>
+                            <div className='w-full mb-[150px]'>
                                 <div className='w-[50%] relative top-[250px] z-[9999]'>
                                     <p className='text-blue-300 '>Personal Project</p>
                                     <p className={`${isLightMode ? 'text-red-500' : 'text-white'} font-bold tracking-wide text-[1.5rem] mb-3`}>{project.name}</p>

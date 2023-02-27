@@ -19,7 +19,7 @@ function App() {
   useEffect(()=>{
     setTimeout(()=>{
       setIsLoading(false)
-    }, 4500)
+    }, 5000)
   },[])
 
   function viewNavMobile(){
@@ -45,9 +45,13 @@ function App() {
       }
     </div> :
 
-    <div className="bg-slate-700 min-h-screen flex pt-[20%]  justify-center">
-      <img src="myPicture.jpg" className="w-[200px] h-[200px] rounded-full loading-picture"/>
+   <div className="bg-slate-900 min-h-screen flex items-center justify-center">
+     <div class="loader">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
     </div>
-}
+   </div>
+  }
 
 export default App
