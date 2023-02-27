@@ -3,9 +3,11 @@ import { myProjects } from './myProjects'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import "animate.css/animate.min.css";
 import { FaGithub, FaLink } from 'react-icons/fa';
+import useColor from '../useColor';
 
 export default function Projects({ isLightMode, width }) {
-  return (
+  
+    return (
     <section className='min-h-screen pt-[150px] pb-[100px]' id='projects'>
         <h2 className={`${isLightMode ? 'text-slate-700' : 'text-white'} text-[2rem] font-bold tracking-wide`}>
             My <span className={`${isLightMode ? 'text-red-600' : 'text-blue-200'}`}>Projects</span>
@@ -22,8 +24,8 @@ export default function Projects({ isLightMode, width }) {
                 }
                 return (
                     <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true} key={project.id}>
-                        <div className='rounded-lg mb-[100px] md:mb-[50px] p-5'>
-                            <div style={projectStyle} className='rounded-lg h-[300px] w-[300px]'></div>
+                        <div className='rounded-lg mb-[50px] p-5'>
+                            <div style={projectStyle} className='rounded-lg h-[350px] w-[350px]'></div>
                             <div className='absolute top-[30px] w-[300px] p-3'>
                                 <p className='text-blue-300 font-semi-bold text-sm'>Personal Project</p>
                                 <p className='text-blue-300 font-bold mt-6 text-[1.5rem]'>{project.name}</p>
@@ -36,6 +38,7 @@ export default function Projects({ isLightMode, width }) {
                                             <FaLink />
                                         </a>
                                 </div>
+                            
                             </div>
                         </div>
                     </AnimationOnScroll>

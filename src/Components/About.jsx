@@ -4,7 +4,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function About({ isLightMode }) {
   return (
-    <section className='h-screen pt-[150px] md:pt-[300px]' id='about'>
+    <section className='h-[70vh] pt-[100px] md:pt-[100px]' id='about'>
       <h2 className={`${isLightMode ? 'text-slate-700' : 'text-white'} text-[2rem] font-bold tracking-wide`}>
         <span className={`${isLightMode ? 'text-red-600' : 'text-blue-200'}`}>ABOUT </span>ME
       </h2>
@@ -17,9 +17,9 @@ export default function About({ isLightMode }) {
            </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__fadeInRight'>
                 <p className={`${isLightMode ? 'text-gray-700' : 'text-gray-400'} mt-6 md:mt-0 md:text-[0.9rem] font-Sriracha`}>
-                    In my free time, you can find me exploring new technologies and keeping up with the latest industry news, or tinkering with personal projects to improve my skills.
-                    <br /><br />
-                    Thank you for considering me for your web development needs. I look forward to the opportunity to work with you and bring your vision to life.
+                  In my free time, you can find me exploring new technologies and keeping up with the latest industry news, or tinkering with personal projects to improve my skills.
+                  <br /><br />
+                  Thank you for considering me for your web development needs. I look forward to the opportunity to work with you and bring your vision to life.
                 </p>
             </AnimationOnScroll>
         </div>

@@ -2,12 +2,33 @@ import { nanoid } from "nanoid";
 
 export const myProjects = [
     {
+        name: 'Musica (but better)',
+        description : 'A fully responsive music web App with SpotifyApi and Play, prev, pause, next and other functionalities (In Progress)',
+        url: 'https://dot-musica.netlify.app',
+        github: 'https://github.com/Ay7ot/aydot-musica/tree/master',
+        img: 'aydot-musica.png',
+        id: nanoid(),
+        technologies: [
+            'Typescript',
+            'ReactJS',
+            'TailwindCSS',
+            'SpotifyApi',
+            'ContextApi'
+        ]
+    },
+    {
         name: 'Musica',
         description : 'A fully responsive music web App with Play, prev, pause, next and other functionalities',
         url: 'https://spandor-musica.netlify.app',
         github: 'https://github.com/Ay7ot/musica/tree/master',
         img: 'spandor-musica.png',
-        id: nanoid()
+        id: nanoid(),
+        technologies: [
+            'Javascript',
+            'ReactJS',
+            'TailwindCSS',
+            'Free Web Api'
+        ]
     },
     {
         name: "Spandor's Trivia",
@@ -15,7 +36,12 @@ export const myProjects = [
         url: 'https://spandors-trivia.netlify.app',
         github: 'https://github.com/Ay7ot/spandors-trivia/tree/master',
         img: 'spandors-trivia.png',
-        id: nanoid()
+        id: nanoid(),
+        technologies: [
+            'JavaScript',
+            'ReactJS',
+            'Vanilla CSS',
+        ]
     },
     {
         name: "Spandor's Tenzie",
@@ -23,7 +49,12 @@ export const myProjects = [
         url: 'https://spandors-tenzie.netlify.app',
         github: 'https://github.com/Ay7ot/Tenzie/tree/master',
         img: 'spandors-tenzie.png',
-        id: nanoid()
+        id: nanoid(),
+        technologies: [
+            'JavaScript',
+            'ReactJS',
+            'Vanilla CSS',
+        ]
     },
     {
         name: 'Food Ways',
@@ -31,7 +62,12 @@ export const myProjects = [
         url: 'https://food-ways.netlify.app',
         github: 'https://github.com/Ay7ot/Food-Ways/tree/master',
         img: 'food-ways.png',
-        id: nanoid()
+        id: nanoid(),
+        technologies: [
+            'JavaScript',
+            'ReactJS',
+            'Vanilla CSS',
+        ]
     },
     {
         name: 'To-do',
@@ -39,14 +75,11 @@ export const myProjects = [
         url: 'https://spandors-todo-app.netlify.app',
         github: 'https://github.com/Ay7ot/musica/tree/master',
         img: 'to-do.png',
-        id: nanoid()
-    },
-    {
-        name: 'Musica (but better)',
-        description : 'A fully responsive music web App with SpotifyApi and Play, prev, pause, next and other functionalities (In Progress)',
-        url: 'https://aydot-musica.netlify.app',
-        github: 'https://github.com/Ay7ot/aydot-musica/tree/master',
-        img: 'aydot-musica.png',
-        id: nanoid()
+        id: nanoid(),
+        technologies: [
+            'JavaScript',
+            'ReactJS',
+            'Vanilla CSS',
+        ]
     },
 ]
