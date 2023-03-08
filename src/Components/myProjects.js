@@ -5,7 +5,7 @@ export const myProjects = [
         name: 'Musica (but better)',
         description : 'A fully responsive music web App with SpotifyApi and Play, prev, pause, next and other functionalities (In Progress)',
         url: 'https://dot-musica.netlify.app',
-        github: 'https://github.com/Ay7ot/aydot-musica/tree/master',
+        github: 'https://github.com/Ay7ot/musica-typescript',
         img: 'aydot-musica.png',
         id: nanoid(),
         technologies: [
@@ -28,6 +28,19 @@ export const myProjects = [
             'ReactJS',
             'TailwindCSS',
             'Free Web Api'
+        ]
+    },
+     {
+        name: 'To-do',
+        description : 'A Todo web App with authentication and realtime database with the ability to add, remove, delete and save tasks all to database online',
+        url: 'https://tick-tasks.netlify.app',
+        github: 'https://github.com/Ay7ot/firebase-database',
+        img: 'to-do.png',
+        id: nanoid(),
+        technologies: [
+            'JavaScript',
+            'ReactJS',
+            'Vanilla CSS',
         ]
     },
     {
@@ -68,18 +81,5 @@ export const myProjects = [
             'ReactJS',
             'Vanilla CSS',
         ]
-    },
-    {
-        name: 'To-do',
-        description : 'A Todo web App with ability to add, remove, delete and save tasks to be done',
-        url: 'https://spandors-todo-app.netlify.app',
-        github: 'https://github.com/Ay7ot/musica/tree/master',
-        img: 'to-do.png',
-        id: nanoid(),
-        technologies: [
-            'JavaScript',
-            'ReactJS',
-            'Vanilla CSS',
-        ]
-    },
+    }
 ]
