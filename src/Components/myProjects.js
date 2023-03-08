@@ -30,7 +30,7 @@ export const myProjects = [
             'Free Web Api'
         ]
     },
-     {
+    {
         name: 'To-do',
         description : 'A Todo web App with authentication and realtime database with the ability to add, remove, delete and save tasks all to database online',
         url: 'https://tick-tasks.netlify.app',
