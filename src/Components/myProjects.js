@@ -2,11 +2,11 @@ import { nanoid } from "nanoid";
 
 export const myProjects = [
     {
-        name: 'ProTaskMate',
-        description : 'A Full Stack Task Management Web app that uses the kanban methodology to manage tasks. Built using Reactjs bundled with Typescript and Firebase for the hosting, Realtime-database and User Authentication',
-        url: 'https://protaskmate.web.app',
-        github: 'https://github.com/Ay7ot/protaskmate',
-        img: 'protaskmate.png',
+        name: 'Musica (but better)',
+        description : 'A fully responsive music web App with SpotifyApi and Play, prev, pause, next and other functionalities (In Progress)',
+        url: 'https://dot-musica.netlify.app',
+        github: 'https://github.com/Ay7ot/musica-typescript',
+        img: 'aydot-musica.png',
         id: nanoid(),
         technologies: [
             'Typescript',
@@ -27,6 +27,19 @@ export const myProjects = [
             'ReactJS',
             'TailwindCSS',
             'Free Web Api'
+        ]
+    },
+    {
+        name: 'To-do',
+        description : 'A Todo web App with authentication and realtime database with the ability to add, remove, delete and save tasks all to database online',
+        url: 'https://tick-tasks.netlify.app',
+        github: 'https://github.com/Ay7ot/firebase-database',
+        img: 'to-do.png',
+        id: nanoid(),
+        technologies: [
+            'JavaScript',
+            'ReactJS',
+            'Vanilla CSS',
         ]
     },
     {
@@ -67,18 +80,5 @@ export const myProjects = [
             'ReactJS',
             'Vanilla CSS',
         ]
-    },
-    {
-        name: 'Tick Tasks',
-        description : 'A Todo web App with ability to add, remove, delete and save tasks to be done with realtime database and user authentication',
-        url: 'https://tick-tasks.netlify.app',
-        github: 'https://github.com/firebase-database',
-        img: 'tickTasks.png',
-        id: nanoid(),
-        technologies: [
-            'JavaScript',
-            'ReactJS',
-            'Vanilla CSS',
-        ]
-    },
+    }
 ]
