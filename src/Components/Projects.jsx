@@ -9,7 +9,7 @@ export default function Projects({ isLightMode, width }) {
   
     return (
     <section className='min-h-screen pt-[150px] pb-[100px]' id='projects'>
-        <h2 className={`${isLightMode ? 'text-slate-700' : 'text-white'} text-[2rem] font-bold tracking-wide`}>
+        <h2 className={`${isLightMode ? 'text-slate-700' : 'text-white'} text-[2rem] font-bold tracking-wide font-alkatra`}>
             My <span className={`${isLightMode ? 'text-red-600' : 'text-blue-200'}`}>Projects</span>
         </h2>
         {
